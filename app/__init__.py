@@ -1,47 +1,24 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-from flask_uploads import UploadSet, configure_uploads, IMAGES
+from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
-from config import config_options, DevConfig
 from flask_mail import Mail
-from flask_simplemde import SimpleMDE
 
-login_manager = LoginManager()
-login_manager.session_protection = 'strong'
+from config import Config
+
+app = Flask(__name__)
+db = SQLAlchemy(app)
+login_manager = LoginManager(app)
+bootstrap = Bootstrap(app)
+mail = Mail(app)
 login_manager.login_view = 'auth.login'
+login_manager.session_protection = 'strong'
 
 
-bootstrap = Bootstrap()
-db = SQLAlchemy()
-mail = Mail()
-simple = SimpleMDE()
-photos = UploadSet('photos', IMAGES)
-
-
-def create_app(config_name):
-
-    app = Flask(__name__)
-
-    # app configurations
-    app.config.from_object(config_options[config_name])
-
-    # Initializing flask extensions
-    bootstrap.init_app(app)
-    db.init_app(app)
-    login_manager.init_app(app)
-    mail.init_app(app)
-    simple.init_app(app)
-
-    # registering the main app Blueprint
+def create_app():
+    app.config.from_object(Config)
+    from .auth import auth as auth_blueprint
     from .main import main as main_blueprint
+    app.register_blueprint(auth_blueprint)
     app.register_blueprint(main_blueprint)
-
-    # registering the auth blueprint
-    from .auth import auth as main_blueprint
-    app.register_blueprint(main_blueprint, url_prefix='/auth')
-
-    # configure uploadset
-    configure_uploads(app, photos)
-
     return app
