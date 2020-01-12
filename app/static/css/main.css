@@ -96,8 +96,8 @@ margin-top:20px;
   text-decoration: none;
 }
 
-.bgimage{
-background-image:url('../assets/bg.png');
+#image{
+background-image:url('https://bit.ly/2TgBz4w');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
