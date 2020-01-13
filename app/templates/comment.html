@@ -11,15 +11,15 @@
 {% block content %}
 <div class="container-fluid">
     <div class="jumbotron">
-        <h1 style="font-size:30px">Comments page</h1>
-        <a href="/posts"><button class="btn" style="font-size:30px">All Pitches</button></a>
+        <h1>Comments page</h1>
+        <a href="/posts"><button class="btn">All Pitches</button></a>
     </div>
 <div class="row col-md-12">
     <div class="col-md-4">
         <div class="text-white">{{wtf.quick_form(form)}}</div>
     </div>
     <div class="col-md-8">
-        <h2 class="text-center text-white"style="font-size:30px">All comments:</h2>
+        <h2 class="text-center text-white">All comments:</h2>
         <p>{{display_comments(comments)}}</p>
     </div>
 </div>
