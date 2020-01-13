@@ -9,6 +9,9 @@
 The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
 
  ## BDD(Behaviour Driven Development)
+
+  ![alt text](img.png)
+  
 >Login Inputs
 
 | Inputs |  Description |
