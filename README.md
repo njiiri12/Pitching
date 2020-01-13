@@ -108,3 +108,18 @@ After extracting the files,
 5. Running tests
 
  > ``python3 manage.py test.``
+
+
+
+## Contacts 
+**ccayreen24@gmail.com**
+
+
+## Live link 
+**You can view the project through this link**
+
+
+
+## License 
+
+#### [*GNU License*](LICENSE)
