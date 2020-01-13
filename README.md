@@ -11,7 +11,7 @@ The users will submit their one minute pitches and other users will vote on them
  ## BDD(Behaviour Driven Development)
 
   ![alt text](img.png)
-  
+
 >Login Inputs
 
 | Inputs |  Description |
@@ -53,3 +53,12 @@ The users will submit their one minute pitches and other users will vote on them
 - Users can submit a pitch in any category. 
 
 - Users can view the different categories. 
+
+## Technologies used
+* Python3
+* Flask
+* Javascript
+* Particle Js
+* Html5
+* Css3
+* Bootstrap4
