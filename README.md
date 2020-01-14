@@ -117,9 +117,9 @@ After extracting the files,
 
 ## Live link 
 **You can view the project through this link**
-
+https://catepitch.herokuapp.com/
 
 
 ## License 
-https://cate-pitch.herokuapp.com
+
 #### [*GNU License*](LICENSE)
