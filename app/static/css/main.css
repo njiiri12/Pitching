@@ -23,27 +23,7 @@ font-size:20px;
 margin-top:20px;
 }
 
-#vick {
-    align-self: center;
-    background: white;
-    width: 400px;
-    height: 400px;
-    cursor: ew-resize;
-    position: absolute;
-    border-radius: 15px;
-    elevation: 30deg;
-}
 
-#vick-signup {
-    align-self: center;
-    background: white;
-    width: 450px;
-    height: 500px;
-    cursor: ew-resize;
-    position: absolute;
-    border-radius: 15px;
-    elevation: 30deg;
-}
 
 .division {
     align-items: center;
