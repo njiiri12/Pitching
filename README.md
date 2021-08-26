@@ -2,7 +2,7 @@
  - ONE MINUTE PITCH 
 
 ## AUTHOR 
- - CATHERINE NDUKU
+ - Yvonne Njiiri
 
  ## DESCRIPTION 
  - This is a Python-Flask Application that allows users to create one minute pitch. You only have 60 seconds to impress someone. 1 minute can make or break you.
@@ -24,8 +24,8 @@ The users will submit their one minute pitches and other users will vote on them
 | Inputs |  Description |
 | :---         |          ---: |
 | Username  | Account username, ``eg lauradoe``|
-| Email  | User email, ``eg morty@testmail.com``|
-| Password  | Account password, ``eg laura23``|
+| Email  | User email, ``eg njerinjiiri@gmail.com``|
+| Password  | Account password, ``eg Jamlick12``|
 | Confirm Password  | Account password, ``eg laura23``|
 
 > Pitches inputs
@@ -112,12 +112,12 @@ After extracting the files,
 
 
 ## Contacts 
-**ccayreen24@gmail.com**
+**njerinjiiri@gmail.com**
 
 
 ## Live link 
 **You can view the project through this link**
-https://catepitch.herokuapp.com/
+https://njiriipitch.herokuapp.com/
 
 
 ## License 
